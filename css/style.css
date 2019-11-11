@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+  /* 10px/16px = 62.5% -> 1rem = 10px*/
+  /*Påverkar alla regler med enhet "rem"*/
+}
+
 body {
   padding: 1rem;
   background: #fff;
@@ -13,12 +19,7 @@ body {
   font-size: 1rem;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-}
-
-html {
-  font-size: 62.5%;
-  /* 10px/16px = 62.5% -> 1rem = 10px*/
+  flex-direction: column; /* I kolumn i mobillayout*/
 }
 
 .main > *,
@@ -82,7 +83,7 @@ strong {
 
 .main {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* I kolumn i mobillayout*/
 }
 
 .main-nav {
@@ -100,13 +101,13 @@ strong {
   background: #fff;
   border: 3px solid rgb(113, 115, 136);
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* I kolumn i mobillayout*/
   align-items: center;
 }
 
 .rwd-directions {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*Låt elementen komma på nytt rad om de inte får plats*/
   justify-content: center;
 }
 
@@ -160,25 +161,27 @@ strong {
   color: #fff;
 }
 
-@media only screen and (min-width: 900px) {
+/*MEDIAQUERY MED BRYTPUNKT 600px*/
+/*d.v.s om skärmbredden blir större än 600px ska detta gälla*/
+@media only screen and (min-width: 600px) {
   /* DESKTOP-LAYOUT GOES HERE*/
   html {
-    font-size: 100%;
+    font-size: 100%; /*Ökar root-fontsize till 100% - påverkar alla regler med enhet "rem"*/
   }
 
   .main {
-    flex-direction: row;
+    flex-direction: row; /*Här kommer elemententen på rad istället!*/
   }
 
   .main-nav {
-    flex: 1;
+    flex: 1; /*.main-nav kommer vara lika stor som .sidebar*/
   }
 
   .content {
-    flex: 4;
+    flex: 4; /*.content kommer vara 4ggr större än .mainnav och .sidebar*/
   }
 
   .sidebar {
-    flex: 1;
+    flex: 1; /*.sidebar kommer  vara lika stor som .main-nav*/
   }
 }
