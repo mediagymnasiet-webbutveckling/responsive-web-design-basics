@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- viewport-taggen - ett måste i din HTML för RWD -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- en reset CSS som gör att vissa defaultinställningar tolkas lika oavsett webbläsare - kan vara bra att ha oavsett RWD eller inte -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Responsive Web Design - Grunder</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>Responsive Web Design (RWD)</h1>
+
+    </div>
+
+    <header class="header">
+      <p>
+        <strong>Vad är Responsive Web Design?</strong>
+        Betyder att layouten ändras baserat på den enhet (mobil, tablet, desktop) som använder sitter på. Samma
+        HTML-element (i stor utsträckning). Brytpunkter definerar i CSS med hjälp av mediaqueries.
+        <strong>Mobile-first</strong>
+        Är en strategi där man skapar layout för mobilen först och sedan för desktop. Varför? Många hävdar att detta
+        approach fokuserar mer på huvudinnehållet. Du behvöver oftast mindra CSS-regler för mobil och det är sedan
+        enklare att lägga till CSS-regler för desktop än tvärtom. När du skriver CSS för mobil-first använder du
+        <em>min-width</em> i dina mediaqueries istället för <em>max-width</em>
+      </p>
+    </header>
+    <main class="main">
+      <nav class="main-nav">
+        <p>
+          <strong>Grid Cell</strong>
+          En grid cell är den minsta enheten i en grid. Det är den plats där den vertikala och horisontella spåren möts.
+        </p>
+      </nav>
+
+      <section class="content">
+
+        <h1>RWD: Tips och strategier</h1>
+        <div class="main-picture">
+          <img src="images/rwd.png" alt="Responsive Web Design">
+        </div>
+        <article class="rwd-directions">
+
+          <div class="direction">
+            <h2>Tips #1</h2>
+            <p><strong>
+                Glöm inte viewport-taggen!</strong></p>
+          </div>
+          <div class="direction">
+            <h2>Tips #2</h2>
+            <p><strong></p>Använd Mediaqueries!</strong></p>
+          </div>
+          <div class="direction">
+            <h2>Tips #3</h2>
+            <p><strong>
+                Undvik fasta dimenstioner!</strong></p>
+          </div>
+          <div class="direction">
+            <h2>Tips #4</h2>
+            <p><strong>
+                Gör bilder responsiva!</strong></p>
+          </div>
+          <div class="direction">
+            <h2>Tips #5</h2>
+            <p><strong>Designa utifrån innehållet!</strong>
+            </p>
+          </div>
+          <div class="direction">
+            <h2>Tips #6</h2>
+            <p><strong>Använd moderna layouttekniker!</strong>
+            </p>
+          </div>
+
+
+
+      </section>
+      <aside class="sidebar">
+        <p>
+          <strong>Grid Track (kolumn)</strong> En grid track är avståndet mellan två motstående grid lines, vilket
+          formar
+          en rad eller kolumn.
+        </p>
+      </aside>
+    </main>
+    <footer class="footer">
+      <p>
+        <strong>Grid Track (rad)</strong> En grid track är avståndet mellan två motstående grid lines, vilket formar
+        en rad eller kolumn.
+      </p>
+    </footer>
+
+    <p>
+      Nu när vi lärt oss CSS Flexbox är det en utmärkt teknik för RWD! Se här hur Flexbox stöds i olika webbläsare
+      <a href="https://caniuse.com/#feat=flexbox" target="_blank">Can I Use.</a>
+    </p>
+
+  </div>
+</body>
+
+</html>

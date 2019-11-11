@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Scope+One|Open+Sans:700");
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  padding: 1rem;
+  background: #fff;
+  font-family: "Scope One", sans-serif;
+  color: rgb(113, 115, 136);
+  font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  font-size: 62.5%;
+  /* 10px/16px = 62.5% -> 1rem = 10px*/
+}
+
+
+.main>*,
+.title,
+.header,
+.footer {
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+}
+
+
+/*ALLA BILDER SKA VARA 100% så att de anpassar sig till sin behållare oavsett mobil eller desktop!*/
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  color: rgb(113, 115, 136);
+  font-size: 4.5rem;
+  font-weight: 700;
+  padding-top: 0.5rem;
+}
+
+h2 {
+  color: #999;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+
+
+p {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #e4844a;
+}
+
+strong {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.header {
+  border: 3px solid rgb(138, 0, 84);
+
+}
+
+.header:hover {
+  background-color: rgb(138, 0, 84);
+  border: 3px solid rgb(113, 115, 136);
+  color: #fff;
+}
+
+.header h1 {
+  font-weight: 800;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav {
+  padding: 1rem;
+  border: 3px solid rgb(255, 0, 72);
+
+}
+
+.main-nav:hover {
+  background-color: rgb(255, 0, 72);
+  border: 3px solid rgb(113, 115, 136);
+  color: #fff;
+}
+
+.content {
+  background: #fff;
+  border: 3px solid rgb(113, 115, 136);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rwd-directions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.direction {
+  min-width: 500px;
+  min-height: 200px;
+  font-size: 2rem;
+  margin: 2rem;
+  padding: 1rem;
+  color: #fff;
+  background: rgb(169, 170, 181);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgb(169, 170, 181);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.direction h2 {
+  color: inherit;
+  font-size: inherit;
+}
+
+.main-picture {
+  width: 50%;
+}
+
+.sidebar {
+  padding: 1rem;
+  border: 3px solid rgba(2, 143, 118, 0.8);
+
+}
+
+.sidebar:hover {
+  background-color: rgba(2, 143, 118, 0.8);
+  border: 3px solid rgb(113, 115, 136);
+  color: #fff;
+}
+
+.footer {
+  border: 3px solid rgba(38, 95, 163, 0.8);
+
+}
+
+.footer:hover {
+  background-color: rgba(38, 95, 163, 0.8);
+  border: 3px solid rgb(113, 115, 136);
+  color: #fff;
+}
+
+
+
+@media only screen and (min-width: 900px) {
+
+  /* DESKTOP-LAYOUT GOES HERE*/
+  html {
+    font-size: 100%;
+
+  }
+
+  .main {
+    flex-direction: row;
+  }
+
+  .main-nav {
+    flex: 1;
+  }
+
+  .content {
+    flex: 4;
+  }
+
+  .sidebar {
+    flex: 1;
+  }
+}
