@@ -1,1 +1,1 @@
-# responsive-web-design-basics
+#Ett exempel som visar grunderna i Responsive Web Design
